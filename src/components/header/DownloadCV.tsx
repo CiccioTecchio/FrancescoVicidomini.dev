@@ -1,4 +1,4 @@
-import DownloadRoundedIcon from "@mui/icons-material/DownloadRounded";
+import { DownloadIcon } from "../Icons";
 export default function DownloadCV() {
   return (
     <div>
@@ -9,7 +9,7 @@ export default function DownloadCV() {
         aria-label="Download CV"
         title="Download CV"
       >
-        <DownloadRoundedIcon fontSize="small" />
+        <DownloadIcon />
         <span className="hidden text-xs font-semibold uppercase tracking-[0.28em] sm:inline">
           Download CV
         </span>

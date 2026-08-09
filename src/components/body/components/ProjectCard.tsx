@@ -1,8 +1,4 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import Button from "@mui/material/Button";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
+import { GitHubIcon } from "../../Icons";
 
 type ProjectCardProps = {
   name: string;
@@ -24,12 +20,8 @@ export default function ProjectCard({
   repoUrl,
 }: ProjectCardProps) {
   return (
-    <Card
-      elevation={0}
-      className="flex h-full flex-col rounded-[1.75rem] border border-slate-200/80 bg-slate-50/80 shadow-[0_16px_48px_rgba(15,23,42,0.06)]"
-      sx={{ borderRadius: "1.75rem" }}
-    >
-      <CardContent className="flex-1 !p-6">
+    <article className="flex h-full flex-col rounded-[1.75rem] border border-slate-300/90 bg-white shadow-[0_18px_48px_rgba(15,23,42,0.12)] ring-1 ring-slate-900/[0.03]">
+      <div className="flex-1 p-6">
         <div className="flex items-start justify-between gap-4">
           <div>
             <h3 className="text-2xl font-semibold text-slate-900">
@@ -53,30 +45,21 @@ export default function ProjectCard({
         </div>
 
         <p className="mt-6 text-base leading-8 text-slate-600">{description}</p>
-      </CardContent>
+      </div>
 
       {repoUrl ? (
-        <CardActions className="!px-6 !pb-6 !pt-0">
-          <Button
+        <div className="px-6 pb-6 pt-0">
+          <a
             href={repoUrl}
             target="_blank"
             rel="noreferrer"
-            startIcon={<GitHubIcon />}
-            variant="contained"
-            sx={{
-              borderRadius: "999px",
-              backgroundColor: "#111827",
-              color: "#f8fafc",
-              px: 2,
-              "&:hover": {
-                backgroundColor: "#1f2937",
-              },
-            }}
+            className="inline-flex items-center gap-2 rounded-full bg-slate-900 px-4 py-2 text-sm font-medium text-slate-50 no-underline transition hover:bg-slate-800 hover:text-white"
           >
+            <GitHubIcon />
             Repo
-          </Button>
-        </CardActions>
+          </a>
+        </div>
       ) : null}
-    </Card>
+    </article>
   );
 }

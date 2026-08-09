@@ -1,13 +1,8 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import MailOutlineRoundedIcon from "@mui/icons-material/MailOutlineRounded";
-import { useSelector } from "react-redux";
-import type { RootState } from "../../store";
+import { GitHubIcon, LinkedInIcon, MailIcon } from "../Icons";
+import type { PersonalInfoState } from "../../features/personal-info/PersonalInfo";
 
-export default function Footer() {
-  const { email, name, surname, urls } = useSelector(
-    (state: RootState) => state.personalInfo,
-  );
+export default function Footer({ personalInfo }: { personalInfo: PersonalInfoState }) {
+  const { email, name, surname, urls } = personalInfo;
   const githubProfile = urls.find(({ name }) => name === "GitHub");
   const linkedInProfile = urls.find(({ name }) => name === "LinkedIn");
 
@@ -21,7 +16,7 @@ export default function Footer() {
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-slate-700/80 bg-gradient-to-br from-slate-50 to-slate-300 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-950 shadow-[0_10px_24px_rgba(15,23,42,0.16)] transition duration-200 hover:-translate-y-0.5 hover:from-white hover:to-slate-200"
           >
-            <GitHubIcon fontSize="small" />
+            <GitHubIcon />
             GitHub
           </a>
         ) : null}
@@ -33,7 +28,7 @@ export default function Footer() {
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full border border-sky-300/70 bg-gradient-to-br from-white to-sky-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-sky-800 shadow-[0_10px_24px_rgba(14,165,233,0.18)] transition duration-200 hover:-translate-y-0.5 hover:from-sky-50 hover:to-sky-200"
           >
-            <LinkedInIcon fontSize="small" />
+            <LinkedInIcon />
             LinkedIn
           </a>
         ) : null}
@@ -43,7 +38,7 @@ export default function Footer() {
             href={`mailto:${email}`}
             className="inline-flex items-center gap-2 rounded-full border border-rose-200/80 bg-[linear-gradient(135deg,_#ffffff_0%,_#dbeafe_20%,_#dcfce7_45%,_#fef3c7_70%,_#fee2e2_100%)] px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 shadow-[0_10px_24px_rgba(239,68,68,0.14)] transition duration-200 hover:-translate-y-0.5 hover:brightness-105"
           >
-            <MailOutlineRoundedIcon fontSize="small" />
+            <MailIcon />
             Email
           </a>
         ) : null}

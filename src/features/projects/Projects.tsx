@@ -1,6 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-type ProjectState = {
+export type ProjectState = {
   name: string;
   description: string;
   startDate: string;
@@ -10,7 +8,7 @@ type ProjectState = {
   repoUrl?: string;
 };
 
-const initialState: ProjectState[] = [
+export const projects: ProjectState[] = [
   {
     name: "Cicciotecchio.dev",
     description:
@@ -105,11 +103,3 @@ const initialState: ProjectState[] = [
     repoUrl: "https://github.com/CiccioTecchio/simrankJava",
   },
 ];
-
-export const projectSlice = createSlice({
-  name: "projects",
-  initialState,
-  reducers: {},
-});
-
-export default projectSlice.reducer;

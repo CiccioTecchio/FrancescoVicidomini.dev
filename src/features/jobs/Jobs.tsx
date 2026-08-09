@@ -1,13 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-type JobState = {
+export type JobState = {
   companyName: string;
   description: string;
   startDate: string;
   endDate: string;
 };
 
-const initialState: JobState[] = [
+export const jobs: JobState[] = [
   {
     companyName: "Engineering",
     description:
@@ -23,11 +21,3 @@ const initialState: JobState[] = [
     endDate: "07-2023",
   },
 ];
-
-export const jobSlice = createSlice({
-  name: "jobs",
-  initialState,
-  reducers: {},
-});
-
-export default jobSlice.reducer;

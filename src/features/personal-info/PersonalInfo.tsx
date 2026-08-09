@@ -1,6 +1,4 @@
-import { createSlice } from "@reduxjs/toolkit";
-
-type PersonaInfoState = {
+export type PersonalInfoState = {
   name: string;
   surname: string;
   dateOfBirth: string;
@@ -17,7 +15,7 @@ type PersonaInfoState = {
   }[];
 };
 
-const initialState: PersonaInfoState = {
+export const personalInfo: PersonalInfoState = {
   name: "Francesco",
   surname: "Vicidomini",
   dateOfBirth: "",
@@ -49,11 +47,3 @@ const initialState: PersonaInfoState = {
     },
   ],
 };
-
-export const skillSlice = createSlice({
-  name: "personalInfo",
-  initialState,
-  reducers: {},
-});
-
-export default skillSlice.reducer;

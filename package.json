@@ -8,7 +8,7 @@
     "CV",
     "front-end"
   ],
-  "homepage": "https://github.com/CiccioTecchio/CiccioTecchio.dev#readme",
+  "homepage": "https://cicciotecchio.dev",
   "bugs": {
     "url": "https://github.com/CiccioTecchio/CiccioTecchio.dev/issues"
   },
@@ -20,31 +20,26 @@
   "author": "Francesco Vicidomini",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "tsc --noEmit"
   },
   "dependencies": {
-    "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.1",
     "@fontsource/roboto": "^5.2.10",
-    "@mui/icons-material": "^9.0.0",
-    "@mui/material": "^9.0.0",
-    "@reduxjs/toolkit": "^2.11.2",
+    "next": "^16.3.0",
     "react": "^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0",
-    "react-redux": "^9.2.0"
+    "react-dom": "^17.0.0 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
+    "@types/node": "^24.0.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.5.0",
     "postcss": "^8.5.10",
     "sass-embedded": "^1.99.0",
     "tailwindcss": "^3.4.19",
-    "typescript": "^6.0.3",
-    "vite": "^8.0.8"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "react": "^17.0.0 || ^18.0.0 || ^19.0.0",

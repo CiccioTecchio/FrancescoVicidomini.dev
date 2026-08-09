@@ -1,12 +1,10 @@
-import { createSlice } from "@reduxjs/toolkit";
-
 type SkillState = {
   name: string;
   description: string;
   rating: number; // valore da 0 a 5 che indica quanto sia bravo con quella skill
 };
 
-const initialState: SkillState[] = [
+export const skills: SkillState[] = [
   {
     name: "Angular",
     description: "Primary front-end framework used in enterprise and research projects.",
@@ -68,11 +66,3 @@ const initialState: SkillState[] = [
     rating: 2,
   },
 ];
-
-export const skillSlice = createSlice({
-  name: "skills",
-  initialState,
-  reducers: {},
-});
-
-export default skillSlice.reducer;

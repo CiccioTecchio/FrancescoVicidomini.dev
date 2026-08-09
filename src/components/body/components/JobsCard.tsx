@@ -12,7 +12,7 @@ export default function JobsCard({
   endDate,
 }: JobsCardProps) {
   return (
-    <article className="rounded-[1.75rem] border border-slate-200/80 bg-slate-50/80 p-6 shadow-[0_16px_48px_rgba(15,23,42,0.06)]">
+    <article className="rounded-[1.75rem] border border-slate-300/90 bg-white p-6 shadow-[0_18px_48px_rgba(15,23,42,0.12)] ring-1 ring-slate-900/[0.03]">
       <div className="flex items-start justify-between gap-4">
         <div>
           <p className="text-2xl font-semibold text-slate-900">
