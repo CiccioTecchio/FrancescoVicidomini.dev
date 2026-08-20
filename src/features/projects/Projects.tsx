@@ -17,7 +17,7 @@ export const projects: ProjectState[] = [
     endDate: "2026",
     committedBy: "My self",
     url: "https://francescovicidomini.dev",
-    repoUrl: "https://github.com/CiccioTecchio/CiccioTecchio.dev",
+    repoUrl: "https://github.com/CiccioTecchio/FrancescoVicidomini.dev",
   },
   {
     name: "My Awesome Coin Collection",
