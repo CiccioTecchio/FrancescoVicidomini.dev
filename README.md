@@ -1,6 +1,7 @@
-# CiccioTecchio.dev
+# FrancescoVicidomini.dev
 
-Personal website of Francesco Vicidomini available [here](https://cicciotecchio.dev/).
+Personal website of Francesco Vicidomini, aka CiccioTecchio,
+available at [francescovicidomini.dev](https://francescovicidomini.dev/).
 In this website I explain my experiences and my skills.  
 The site uses Next.js App Router and is rendered on the server so that search
 engines receive the complete page markup.
@@ -21,8 +22,10 @@ engines receive the complete page markup.
 1. Import this GitHub repository into Vercel.
 2. Keep the detected framework preset set to **Next.js**.
 3. Keep the default build command (`npm run build`) and output settings.
-4. Add `cicciotecchio.dev` and `www.cicciotecchio.dev` in the project domain
-   settings, then configure the DNS records shown by Vercel.
+4. Add `francescovicidomini.dev` as the primary production domain. Keep
+   `cicciotecchio.dev` and `www.cicciotecchio.dev` attached to the same project
+   so the host-aware permanent redirects in `next.config.ts` can preserve every
+   path on the new domain. Configure the DNS records shown by Vercel.
 
 Every push to `master` will produce a production deployment after the GitHub
 integration is enabled. Pull requests will receive their own preview deployment.

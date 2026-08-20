@@ -5,7 +5,7 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 import "../src/index.scss";
 
-const siteUrl = "https://cicciotecchio.dev";
+const siteUrl = "https://francescovicidomini.dev";
 const title = "Francesco Vicidomini | Front-End Developer";
 const description =
   "Portfolio and CV of Francesco Vicidomini, Front-End Developer based in Salerno specialized in Angular, RxJS, TypeScript, UI/UX, performance, and modern web architectures.";
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     description,
     type: "profile",
     url: "/",
-    siteName: "CiccioTecchio.dev",
+    siteName: "Francesco Vicidomini",
     locale: "en_US",
     images: [
       { url: "/Propic-CV.jpg", alt: "Francesco Vicidomini profile photo" },

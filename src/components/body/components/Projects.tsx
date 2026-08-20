@@ -52,9 +52,9 @@ export default function Projects({ projects }: ProjectsProps) {
   return (
     <section className="px-4 sm:px-6">
       <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/60 bg-white/70 p-8 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl sm:p-12">
-        <p className="text-xs font-semibold uppercase tracking-[0.32em] text-sky-700">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.32em] text-sky-700">
           Projects
-        </p>
+        </h2>
 
         <div className="relative mt-8 grid grid-cols-3 gap-2" role="tablist" aria-label="Project categories">
           <div className="pointer-events-none absolute left-[16.67%] right-[16.67%] top-[18px] h-px bg-slate-200" />

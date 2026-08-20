@@ -22,14 +22,14 @@ export default function AboutMe({ name, surname, degrees }: AboutMeProps) {
   return (
     <section className="px-4 sm:px-6">
       <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/60 bg-white/70 p-8 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur-xl sm:p-12">
-        <p className="text-xs font-semibold uppercase tracking-[0.32em] text-sky-700">
+        <h2 className="text-xs font-semibold uppercase tracking-[0.32em] text-sky-700">
           About Me
-        </p>
+        </h2>
 
         <p className="mt-4 w-full text-lg leading-8 text-slate-700 sm:text-xl">
-          I&apos;m {name} {surname}, a Front-End Developer based in Salerno
-          focused on Angular, RxJS, and modern web architectures. I&apos;ve
-          worked on{" "}
+          I&apos;m {name} {surname}, aka as CiccioTecchio, a Front-End Developer
+          based in Salerno focused on Angular, RxJS, and modern web
+          architectures. I&apos;ve worked on{" "}
           <a
             href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en"
             target="_blank"

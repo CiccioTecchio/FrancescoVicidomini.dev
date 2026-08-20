@@ -10,13 +10,13 @@ export type ProjectState = {
 
 export const projects: ProjectState[] = [
   {
-    name: "Cicciotecchio.dev",
+    name: "FrancescoVicidomini.dev",
     description:
       "Personal project behind this website, used to experiment and improve my skills on technologies I do not know yet, in this case React.",
     startDate: "2026",
     endDate: "2026",
     committedBy: "My self",
-    url: "https://cicciotecchio.dev",
+    url: "https://francescovicidomini.dev",
     repoUrl: "https://github.com/CiccioTecchio/CiccioTecchio.dev",
   },
   {

@@ -4,7 +4,7 @@ export type PersonalInfoState = {
   dateOfBirth: string;
   phone: string;
   email: string;
-  urls: { url: string; name: string }[]; //per esempio url: https://cicciotecchio.dev name:'Personal website'
+  urls: { url: string; name: string }[];
   degrees: {
     degreeName: string;
     type: "Bachelor" | "Master";
@@ -22,7 +22,7 @@ export const personalInfo: PersonalInfoState = {
   phone: "+39 327 5684733",
   email: "fr.vicidomini94@gmail.com",
   urls: [
-    { url: "https://cicciotecchio.dev/", name: "Personal website" },
+    { url: "https://francescovicidomini.dev/", name: "Personal website" },
     { url: "https://github.com/CiccioTecchio", name: "GitHub" },
     {
       url: "https://www.linkedin.com/in/francesco-vicidomini/",
