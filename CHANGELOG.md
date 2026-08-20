@@ -1,3 +1,10 @@
+# 2.0.1
+
+- added new resume
+- added new domain francescovicidomini.dev
+- added alterName CiccioTecchio in metadata
+- added headers title for every sections
+
 # 2.0.0
 
 - migrated the application from Vite to Next.js 16 with App Router
