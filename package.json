@@ -1,6 +1,6 @@
 {
-  "name": "cicciotecchio.dev",
-  "version": "2.0.1",
+  "name": "francescovicidomini.dev",
+  "version": "2.0.2",
   "description": "my portfolio",
   "keywords": [
     "portfolio",
@@ -10,11 +10,11 @@
   ],
   "homepage": "https://francescovicidomini.dev",
   "bugs": {
-    "url": "https://github.com/CiccioTecchio/CiccioTecchio.dev/issues"
+    "url": "https://github.com/CiccioTecchio/FrancescoVicidomini.dev/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CiccioTecchio/CiccioTecchio.dev.git"
+    "url": "git+https://github.com/CiccioTecchio/FrancescoVicidomini.dev.git"
   },
   "license": "MIT",
   "author": "Francesco Vicidomini",

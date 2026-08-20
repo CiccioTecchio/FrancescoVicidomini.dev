@@ -1,11 +1,19 @@
-# 2.0.1
+# CHANGELOG
+
+## 2.0.2
+
+- change link to my personal website repo
+- update new CV
+- fixed CHANGELOG.md structure
+
+## 2.0.1
 
 - added new resume
-- added new domain francescovicidomini.dev
+- added new domain <https://francescovicidomini.dev>
 - added alterName CiccioTecchio in metadata
 - added headers title for every sections
 
-# 2.0.0
+## 2.0.0
 
 - migrated the application from Vite to Next.js 16 with App Router
 - added server-side rendering for the home page
@@ -18,13 +26,13 @@
 - updated GitHub Actions to run type checking and production builds
 - updated local development and deployment documentation
 
-# 1.0.1
+## 1.0.1
 
 - added CHANGELOG.md
 - added metadata in index.html
 - added robots.txt
 - added sitemap.xml
 
-# 1.0.0
+## 1.0.0
 
-- first release of https://cicciotecchio.dev
+- first release of <https://cicciotecchio.dev>
