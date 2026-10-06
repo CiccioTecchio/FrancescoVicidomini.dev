@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 2.0.3
+
+- update new CV with keycloack, JWT and OAuth2
+
 ## 2.0.2
 
 - change link to my personal website repo
