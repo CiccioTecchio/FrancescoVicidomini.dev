@@ -9,7 +9,7 @@ export const jobs: JobState[] = [
   {
     companyName: "Engineering",
     description:
-      "Software Development Specialist focused on cybersecurity applications, Angular front-end architecture, RxJS, NgRx, CI/CD pipelines, Docker deployments, and international research projects.",
+      "Software Development Specialist focused on cybersecurity applications, Angular, Spring Boot, RxJS, NgRx, CI/CD pipelines, Docker deployments, and international research projects.",
     startDate: "07-2023",
     endDate: "Present",
   },

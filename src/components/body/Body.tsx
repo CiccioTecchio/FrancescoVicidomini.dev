@@ -1,23 +1,36 @@
 import type { JobState } from "../../features/jobs/Jobs";
-import type { PersonalInfoState } from "../../features/personal-info/PersonalInfo";
+import {
+  aboutMeCaption,
+  type PersonalInfoState,
+} from "../../features/personal-info/PersonalInfo";
 import type { ProjectState } from "../../features/projects/Projects";
 import AboutMe from "./components/AboutMe";
 import Jobs from "./components/Jobs";
 import Projects from "./components/Projects";
-
 type BodyProps = {
-  personalInfo: PersonalInfoState;
+  aboutMeCaption: string[];
   jobs: JobState[];
-  projects: ProjectState[];
+  workProjects: ProjectState[];
+  personalProjects: ProjectState[];
+  universityProjects: ProjectState[];
 };
 
-export default function Body({ personalInfo, jobs, projects }: BodyProps) {
-  const { name, surname, degrees } = personalInfo;
+export default function Body({
+  aboutMeCaption,
+  jobs,
+  workProjects,
+  personalProjects,
+  universityProjects,
+}: BodyProps) {
   return (
     <div className="flex flex-col gap-10 sm:gap-16">
-      <AboutMe name={name} surname={surname} degrees={degrees} />
+      <AboutMe aboutMeCaption={aboutMeCaption} />
       <Jobs jobs={jobs} />
-      <Projects projects={projects} />
+      <Projects
+        workProjects={workProjects}
+        personalProjects={personalProjects}
+        universityProjects={universityProjects}
+      />
     </div>
   );
 }

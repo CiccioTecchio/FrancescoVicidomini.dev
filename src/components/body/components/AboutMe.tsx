@@ -1,23 +1,16 @@
 type AboutMeProps = {
-  name: string;
-  surname: string;
-  degrees: {
-    degreeName: string;
-    type: "Bachelor" | "Master";
-    vote: number | "110L";
-    universityName: string;
-    graduationYear: number;
-    specialization?: string;
-  }[];
+  aboutMeCaption: string[];
 };
 
-export default function AboutMe({ name, surname, degrees }: AboutMeProps) {
-  const masterDegree = degrees.find(({ type }) => type === "Master");
-  const bachelorDegree = degrees.find(({ type }) => type === "Bachelor");
-  const universityName =
-    masterDegree?.universityName ??
-    bachelorDegree?.universityName ??
-    "Università degli Studi di Salerno";
+export default function AboutMe({ aboutMeCaption }: AboutMeProps) {
+  const aboutMeText = aboutMeCaption.map((paragraph, index) => (
+    <p
+      key={index}
+      className="mt-4 w-full text-base leading-8 text-slate-700 sm:text-lg"
+    >
+      {paragraph}
+    </p>
+  ));
 
   return (
     <section className="px-4 sm:px-6">
@@ -26,47 +19,7 @@ export default function AboutMe({ name, surname, degrees }: AboutMeProps) {
           About Me
         </h2>
 
-        <p className="mt-4 w-full text-lg leading-8 text-slate-700 sm:text-xl">
-          I&apos;m {name} {surname}, aka as CiccioTecchio, a Front-End Developer
-          based in Salerno focused on Angular, RxJS, and modern web
-          architectures. I&apos;ve worked on{" "}
-          <a
-            href="https://research-and-innovation.ec.europa.eu/funding/funding-opportunities/funding-programmes-and-open-calls/horizon-europe_en"
-            target="_blank"
-          >
-            Horizon Europe
-          </a>{" "}
-          and{" "}
-          <a
-            href="https://next-generation-eu.europa.eu/index_en"
-            target="_blank"
-          >
-            NextGenerationEU
-          </a>{" "}
-          projects, building scalable applications with a strong focus on
-          performance, UI/UX, and clean design.
-        </p>
-
-        <p className="mt-4 w-full text-base leading-8 text-slate-600 sm:text-lg">
-          I hold both a Master&apos;s and a Bachelor&apos;s degree in{" "}
-          {masterDegree?.degreeName ??
-            bachelorDegree?.degreeName ??
-            "Computer Science"}{" "}
-          from {universityName}.
-          {masterDegree
-            ? ` I completed my Master's degree in ${masterDegree.graduationYear} with a final grade of ${masterDegree.vote}${masterDegree.specialization ? `, specializing in ${masterDegree.specialization}` : ""}`
-            : ""}
-          {bachelorDegree
-            ? `${masterDegree ? " and" : " I completed"} my Bachelor's degree in ${bachelorDegree.graduationYear}`
-            : ""}
-          .
-        </p>
-
-        <p className="mt-4 w-full text-base leading-8 text-slate-600 sm:text-lg">
-          Outside of work, I&apos;m really into riding motorcycles, playing
-          video games, and spending time at the gym. I also enjoy chess, even if
-          I have to admit I&apos;m not exactly a great player.
-        </p>
+        {aboutMeText}
       </div>
     </section>
   );
