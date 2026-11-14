@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 2.1.0
+
+- added new CV
+- added new projects
+- added about me caption
+- edited previews jobs and projects
+
 ## 2.0.3
 
 - update new CV with keycloack, JWT and OAuth2
